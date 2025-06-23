@@ -242,7 +242,7 @@ def train_EAKF(MSA_real_case,T,obs_power,sam_0,para_0,num_ens,wnum,p0,N_all,C,fl
                 beta_id=[k for k in range(n)]
                 beta=para_record[week,j,beta_id]
                 D=D_sam[j]
-                gamma=2.38
+                gamma=2.36
                 L=L_sam[j]
                 Result = SIR_EAKF(MSA_sam_record[index_t][j][0], MSA_sam_record[index_t][j][1],MSA_sam_record[index_t][j][2],n, 
                                     MSA_sam_record[index_t][j][0]+MSA_sam_record[index_t][j][1]+MSA_sam_record[index_t][j][2], 
